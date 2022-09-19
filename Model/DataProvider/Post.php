@@ -8,7 +8,7 @@ namespace MageWorx\MirasvitBlogSeoCompatibility\Model\DataProvider;
 
 use MageWorx\MirasvitBlogSeoCompatibility\Helper\Data;
 use MageWorx\MirasvitBlogSeoCompatibility\Model\FrontUrl;
-use Mirasvit\Blog\Api\Repository\PostRepositoryInterface;
+use Mirasvit\BlogMx\Api\Repository\PostRepository;
 
 /**
  * Data Provider for Mirasvit Blog Posts
@@ -16,20 +16,20 @@ use Mirasvit\Blog\Api\Repository\PostRepositoryInterface;
 class Post extends \MageWorx\MirasvitBlogSeoCompatibility\Model\DataProvider
 {
     /**
-     * @var PostRepositoryInterface
+     * @var PostRepository
      */
     protected $postRepository;
 
     /**
      * Post constructor.
      *
-     * @param PostRepositoryInterface $postRepository
+     * @param PostRepository $postRepository
      * @param FrontUrl $url
      * @param Data $helper
      * @param int $storeId
      */
     public function __construct(
-        PostRepositoryInterface $postRepository,
+        PostRepository $postRepository,
         FrontUrl $url,
         Data $helper,
         int $storeId = 0
@@ -44,7 +44,7 @@ class Post extends \MageWorx\MirasvitBlogSeoCompatibility\Model\DataProvider
      */
     public function getGeneratedData()
     {
-        $code       = 'mirasvit_blog_post';
+        $code       = 'mirasvit_blogmx_post';
         $title      = __('Mirasvit Blog Posts');
         $collection = $this->postRepository->getCollection();
         $collection->addStoreFilter($this->storeId);

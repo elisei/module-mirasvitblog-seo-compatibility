@@ -15,37 +15,37 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper
     /**
      * XML config path show Mirasvit Blog Pages
      */
-    const XML_PATH_ADD_BLOG_PAGES = 'mageworx_seo/xml_sitemap_mirasvit_blog/add_blog_pages';
+    const XML_PATH_ADD_BLOG_PAGES = 'mageworx_seo/xml_sitemap_mirasvit_blogmx/add_blog_pages';
 
     /**
      * XML config path add post pages
      */
-    const XML_PATH_ADD_POSTS = 'mageworx_seo/xml_sitemap_mirasvit_blog/add_posts';
+    const XML_PATH_ADD_POSTS = 'mageworx_seo/xml_sitemap_mirasvit_blogmx/add_posts';
 
     /**
      * XML config path add categories pages
      */
-    const XML_PATH_ADD_CATEGORIES = 'mageworx_seo/xml_sitemap_mirasvit_blog/add_categories';
+    const XML_PATH_ADD_CATEGORIES = 'mageworx_seo/xml_sitemap_mirasvit_blogmx/add_categories';
 
     /**
      * XML config path add tag pages
      */
-    const XML_PATH_ADD_TAGS = 'mageworx_seo/xml_sitemap_mirasvit_blog/add_tags';
+    const XML_PATH_ADD_TAGS = 'mageworx_seo/xml_sitemap_mirasvit_blogmx/add_tags';
 
     /**
      * XML config path add author pages
      */
-    const XML_PATH_AUTHORS = 'mageworx_seo/xml_sitemap_mirasvit_blog/add_authors';
+    const XML_PATH_AUTHORS = 'mageworx_seo/xml_sitemap_mirasvit_blogmx/add_authors';
 
     /**
      * XML config path add author pages
      */
-    const XML_PATH_PRIORITY = 'mageworx_seo/xml_sitemap_mirasvit_blog/blog_pages_priority';
+    const XML_PATH_PRIORITY = 'mageworx_seo/xml_sitemap_mirasvit_blogmx/blog_pages_priority';
 
     /**
      * XML config path add author pages
      */
-    const XML_PATH_CHANGEFREQ = 'mageworx_seo/xml_sitemap_mirasvit_blog/blog_pages_changefreq';
+    const XML_PATH_CHANGEFREQ = 'mageworx_seo/xml_sitemap_mirasvit_blogmx/blog_pages_changefreq';
 
     /**
      * @var int

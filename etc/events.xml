@@ -8,7 +8,7 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
     <event name="mageworx_xmlsitemap_add_generator">
         <observer
-                name="add_mirasvit_blog_pages"
+                name="add_mirasvit_blogmx_pages"
                 instance="MageWorx\MirasvitBlogSeoCompatibility\Observer\AddBlogPagesObserver"
         />
     </event>

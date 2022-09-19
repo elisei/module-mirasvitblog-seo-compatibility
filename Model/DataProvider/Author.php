@@ -8,7 +8,7 @@ namespace MageWorx\MirasvitBlogSeoCompatibility\Model\DataProvider;
 
 use MageWorx\MirasvitBlogSeoCompatibility\Helper\Data;
 use MageWorx\MirasvitBlogSeoCompatibility\Model\FrontUrl;
-use Mirasvit\Blog\Api\Repository\AuthorRepositoryInterface;
+use Mirasvit\BlogMx\Api\Repository\AuthorRepository;
 
 /**
  * Data Provider for Mirasvit Blog Author Pages
@@ -16,20 +16,20 @@ use Mirasvit\Blog\Api\Repository\AuthorRepositoryInterface;
 class Author extends \MageWorx\MirasvitBlogSeoCompatibility\Model\DataProvider
 {
     /**
-     * @var AuthorRepositoryInterface
+     * @var AuthorRepository
      */
     protected $authorRepository;
 
     /**
      * Author constructor.
      *
-     * @param AuthorRepositoryInterface $authorRepository
+     * @param AuthorRepository $authorRepository
      * @param FrontUrl $url
      * @param Data $helper
      * @param int $storeId
      */
     public function __construct(
-        AuthorRepositoryInterface $authorRepository,
+        AuthorRepository $authorRepository,
         FrontUrl $url,
         Data $helper,
         int $storeId = 0
@@ -44,7 +44,7 @@ class Author extends \MageWorx\MirasvitBlogSeoCompatibility\Model\DataProvider
      */
     public function getGeneratedData()
     {
-        $code       = 'mirasvit_blog_author';
+        $code       = 'mirasvit_blogmx_author';
         $title      = __('Mirasvit Blog Authors');
         $collection = $this->authorRepository->getCollection();
 

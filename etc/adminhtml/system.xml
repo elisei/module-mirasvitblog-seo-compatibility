@@ -14,7 +14,7 @@
             <label>SEO</label>
             <tab>mageworx</tab>
             <resource>MageWorx_XmlSitemap::config_xmlsitemap</resource>
-            <group id="xml_sitemap_mirasvit_blog" translate="label comment" type="text" sortOrder="13" showInDefault="1" showInWebsite="1" showInStore="1">
+            <group id="xml_sitemap_mirasvit_blogmx" translate="label comment" type="text" sortOrder="13" showInDefault="1" showInWebsite="1" showInStore="1">
                 <field id="add_posts" translate="label comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label><![CDATA[Add Post Pages]]></label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>

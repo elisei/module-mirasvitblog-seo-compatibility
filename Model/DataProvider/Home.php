@@ -8,7 +8,7 @@ namespace MageWorx\MirasvitBlogSeoCompatibility\Model\DataProvider;
 
 use MageWorx\MirasvitBlogSeoCompatibility\Helper\Data;
 use MageWorx\MirasvitBlogSeoCompatibility\Model\FrontUrl;
-use Mirasvit\Blog\Api\Repository\CategoryRepositoryInterface;
+use Mirasvit\BlogMx\Api\Repository\CategoryRepository;
 
 /**
  * Data Provider for Mirasvit Blog Home Page
@@ -16,20 +16,20 @@ use Mirasvit\Blog\Api\Repository\CategoryRepositoryInterface;
 class Home extends \MageWorx\MirasvitBlogSeoCompatibility\Model\DataProvider
 {
     /**
-     * @var CategoryRepositoryInterface
+     * @var CategoryRepository
      */
     protected $categoryRepository;
 
     /**
      * Home constructor.
      *
-     * @param CategoryRepositoryInterface $categoryRepository
+     * @param CategoryRepository $categoryRepository
      * @param FrontUrl $url
      * @param Data $helper
      * @param int $storeId
      */
     public function __construct(
-        CategoryRepositoryInterface $categoryRepository,
+        CategoryRepository $categoryRepository,
         FrontUrl $url,
         Data $helper,
         int $storeId = 0
@@ -43,7 +43,7 @@ class Home extends \MageWorx\MirasvitBlogSeoCompatibility\Model\DataProvider
      */
     public function getGeneratedData()
     {
-        $code       = 'mirasvit_blog_root';
+        $code       = 'mirasvit_blogmx_root';
         $title      = __('Mirasvit Blog Home');
         $collection = $this->categoryRepository->getCollection();
         $collection->addRootFilter();

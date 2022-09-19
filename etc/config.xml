@@ -9,13 +9,13 @@
         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
     <default>
         <mageworx_seo>
-            <xml_sitemap_mirasvit_blog>
+            <xml_sitemap_mirasvit_blogmx>
                 <add_posts>1</add_posts>
                 <add_categories>1</add_categories>
                 <add_tags>1</add_tags>
                 <add_authors>0</add_authors>
                 <blog_pages_priority>0.5</blog_pages_priority>
-            </xml_sitemap_mirasvit_blog>
+            </xml_sitemap_mirasvit_blogmx>
         </mageworx_seo>
     </default>
 </config>

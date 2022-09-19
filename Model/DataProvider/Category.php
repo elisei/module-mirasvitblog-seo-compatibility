@@ -8,7 +8,7 @@ namespace MageWorx\MirasvitBlogSeoCompatibility\Model\DataProvider;
 
 use MageWorx\MirasvitBlogSeoCompatibility\Helper\Data;
 use MageWorx\MirasvitBlogSeoCompatibility\Model\FrontUrl;
-use Mirasvit\Blog\Api\Repository\CategoryRepositoryInterface;
+use Mirasvit\BlogMx\Api\Repository\CategoryRepositoryInterface;
 
 /**
  * Data Provider for Mirasvit Blog Posts
@@ -43,7 +43,7 @@ class Category extends \MageWorx\MirasvitBlogSeoCompatibility\Model\DataProvider
      */
     public function getGeneratedData()
     {
-        $code       = 'mirasvit_blog_category';
+        $code       = 'mirasvit_blogmx_category';
         $title      = __('Mirasvit Blog Categories');
         $collection = $this->categoryRepository->getCollection();
         $collection->excludeRoot();

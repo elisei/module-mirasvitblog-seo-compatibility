@@ -8,7 +8,7 @@ namespace MageWorx\MirasvitBlogSeoCompatibility\Model\DataProvider;
 
 use MageWorx\MirasvitBlogSeoCompatibility\Helper\Data;
 use MageWorx\MirasvitBlogSeoCompatibility\Model\FrontUrl;
-use Mirasvit\Blog\Api\Repository\TagRepositoryInterface;
+use Mirasvit\BlogMx\Api\Repository\TagRepository;
 
 /**
  * Data Provider for Mirasvit Blog Tags
@@ -16,20 +16,20 @@ use Mirasvit\Blog\Api\Repository\TagRepositoryInterface;
 class Tag extends \MageWorx\MirasvitBlogSeoCompatibility\Model\DataProvider
 {
     /**
-     * @var TagRepositoryInterface
+     * @var TagRepository
      */
     protected $tagRepository;
 
     /**
      * Tag constructor.
      *
-     * @param TagRepositoryInterface $tagRepository
+     * @param TagRepository $tagRepository
      * @param FrontUrl $url
      * @param Data $helper
      * @param int $storeId
      */
     public function __construct(
-        TagRepositoryInterface $tagRepository,
+        TagRepository $tagRepository,
         FrontUrl $url,
         Data $helper,
         int $storeId = 0
@@ -44,7 +44,7 @@ class Tag extends \MageWorx\MirasvitBlogSeoCompatibility\Model\DataProvider
      */
     public function getGeneratedData()
     {
-        $code       = 'mirasvit_blog_tag';
+        $code       = 'mirasvit_blogmx_tag';
         $title      = __('Mirasvit Blog Tags');
         $collection = $this->tagRepository->getCollection();
 

@@ -98,17 +98,17 @@ abstract class DataProvider implements DataProviderInterface
     protected function prepareUrl($item, $code)
     {
         switch ($code) {
-            case 'mirasvit_blog_root':
-            case 'mirasvit_blog_category':
+            case 'mirasvit_blogmx_root':
+            case 'mirasvit_blogmx_category':
                 $url = $this->url->getCategoryUrl($item, ['_nosid' => true]);
                 break;
-            case 'mirasvit_blog_post':
+            case 'mirasvit_blogmx_post':
                 $url = $this->url->getPostUrl($item, false);
                 break;
-            case 'mirasvit_blog_tag':
+            case 'mirasvit_blogmx_tag':
                 $url = $this->url->getTagUrl($item, ['_nosid' => true]);
                 break;
-            case 'mirasvit_blog_author':
+            case 'mirasvit_blogmx_author':
                 $url = $this->url->getAuthorUrl($item, ['_nosid' => true]);
                 break;
             default:

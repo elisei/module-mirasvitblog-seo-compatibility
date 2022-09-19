@@ -10,7 +10,7 @@ use Magento\Framework\App\Config\ScopeConfigInterface;
 use Magento\Framework\Url;
 use Magento\Store\Model\StoreManagerInterface;
 
-class FrontUrl extends \Mirasvit\Blog\Model\Url
+class FrontUrl extends \Mirasvit\BlogMx\Model\Url
 {
 
     /**
@@ -19,22 +19,22 @@ class FrontUrl extends \Mirasvit\Blog\Model\Url
      * Use Url from frontend
      *
      * @param StoreManagerInterface $storeManager
-     * @param \Mirasvit\Blog\Model\Config $config
+     * @param \Mirasvit\BlogMx\Model\Config $config
      * @param ScopeConfigInterface $scopeConfig
-     * @param \Mirasvit\Blog\Model\PostFactory $postFactory
-     * @param \Mirasvit\Blog\Model\CategoryFactory $categoryFactory
-     * @param \Mirasvit\Blog\Model\TagFactory $tagFactory
-     * @param \Mirasvit\Blog\Model\AuthorFactory $authorFactory
+     * @param \Mirasvit\BlogMx\Model\PostFactory $postFactory
+     * @param \Mirasvit\BlogMx\Model\CategoryFactory $categoryFactory
+     * @param \Mirasvit\BlogMx\Model\TagFactory $tagFactory
+     * @param \Mirasvit\BlogMx\Model\AuthorFactory $authorFactory
      * @param Url $urlManager
      */
     public function __construct(
         StoreManagerInterface $storeManager,
-        \Mirasvit\Blog\Model\Config $config,
+        \Mirasvit\BlogMx\Model\Config $config,
         ScopeConfigInterface $scopeConfig,
-        \Mirasvit\Blog\Model\PostFactory $postFactory,
-        \Mirasvit\Blog\Model\CategoryFactory $categoryFactory,
-        \Mirasvit\Blog\Model\TagFactory $tagFactory,
-        \Mirasvit\Blog\Model\AuthorFactory $authorFactory,
+        \Mirasvit\BlogMx\Model\PostFactory $postFactory,
+        \Mirasvit\BlogMx\Model\CategoryFactory $categoryFactory,
+        \Mirasvit\BlogMx\Model\TagFactory $tagFactory,
+        \Mirasvit\BlogMx\Model\AuthorFactory $authorFactory,
         Url $urlManager
     ) {
         parent::__construct(
